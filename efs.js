@@ -59,9 +59,9 @@ async function start(url) {
 
 async function main(){
   await start("http://efs-web01.com/EfsWeb/eFiling/MyFiling.aspx")
-  // await start("http://efs-web02.com/EfsWeb/eFiling/MyFiling.aspx")
-  // await start("http://efs-web03.com/EfsWeb/eFiling/MyFiling.aspx")
-  // await start("http://efs-web04.com/EfsWeb/eFiling/MyFiling.aspx")
+  await start("http://efs-web02.com/EfsWeb/eFiling/MyFiling.aspx");
+  await start("http://efs-web03.com/EfsWeb/eFiling/MyFiling.aspx");
+  await start("http://efs-web04.com/EfsWeb/eFiling/MyFiling.aspx");
 }
 
 main()

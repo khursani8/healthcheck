@@ -4,6 +4,8 @@ const utils = require("./utils")
 const config = require("./config")
 screenSize = config.screenSize
 
+screenSize.height = 100;
+
 folder = `images/${utils.getDate()}_cms_common`
 
 if (!fs.existsSync(folder)){
