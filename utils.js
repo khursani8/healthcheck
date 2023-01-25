@@ -9,6 +9,15 @@ function getDate(){
     return `${date}_${month}_${year}`
 }
 
-module.exports = {
-    getDate
+function getTime() {
+  const date_ob = new Date();
+  let hour = ("0" + date_ob.getHours()).slice(-2);
+  let min = ("0" + date_ob.getMinutes()).slice(-2);
+  let sec = ("0" + date_ob.getSeconds()).slice(-2);
+  return `${hour}H ${min}M ${sec}s`;
 }
+
+module.exports = {
+  getDate,
+  getTime,
+};

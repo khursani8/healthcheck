@@ -38,7 +38,7 @@ async function start(url) {
       "Failed to load document.",
       text
     );
-  }, `${page.url()} ${response.remoteAddress().ip}`);
+  }, `${page.url()} ${response.remoteAddress().ip} ${utils.getDate()} ${utils.getTime()}`);
 
   await page.screenshot({
     path: `${folder}/${url.split(".")[0].split("/")[2]}_docedit.png`,

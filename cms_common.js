@@ -37,12 +37,12 @@ async function start(url){
 }
 
 async function main(){
-    await start("http://cms-ap01.com/commonwebservice/")
-    await start("http://cms-ap02.com/commonwebservice/")
-    await start("http://cms-ap03.com/commonwebservice/")
-    await start("http://cms-ap04.com/commonwebservice/")
-    await start("http://cms-ap05.com/commonwebservice/")
-    await start("http://cms-ap06.com/commonwebservice/")
+    await start("http://cms-ap01.com/commonwebservice/default.aspx")
+    await start("http://cms-ap02.com/commonwebservice/default.aspx")
+    await start("http://cms-ap03.com/commonwebservice/default.aspx")
+    await start("http://cms-ap04.com/commonwebservice/default.aspx")
+    await start("http://cms-ap05.com/commonwebservice/default.aspx")
+    await start("http://cms-ap06.com/commonwebservice/default.aspx")
 }
 
 main()
